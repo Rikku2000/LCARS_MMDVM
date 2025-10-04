@@ -1,0 +1,12 @@
+[Unit]
+Description=LCARS-MMDVM
+Requires=network.target
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi-star/lcars_mmdvm.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
